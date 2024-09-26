@@ -14,13 +14,26 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
+        <TextView
+            android:id="@+id/textTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:layout_margin="30dp"
+            android:text="Formulario"/>
+
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:hint="Escriba texto aquí:"/>
+            android:hint="Escriba texto aquí:"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"/>
 
         <EditText
             android:id="@+id/editIntegerNumber"
@@ -28,7 +41,11 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
-            android:hint="Escriba solo números enteros aquí:"/>
+            android:hint="Escriba solo números enteros aquí:"
+            android:textSize="18sp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"/>
 
         <EditText
             android:id="@+id/editDecimalNumber"
@@ -36,12 +53,21 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal"
-            android:hint="Escriba números con decimales aquí:"/>
+            android:hint="Escriba números con decimales aquí:"
+            android:textSize="18sp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"/>
 
         <Switch
             android:id="@+id/switchOption"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:hint="Switch:"
+            android:textSize="18sp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="260dp"
+            android:layout_marginLeft="40dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,14 +79,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Enviar datos" />
+                android:text="Enviar datos"
+                android:textSize="18sp"
+                android:layout_marginTop="320dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:backgroundTint="@color/blue"/>
 
             <Button
                 android:id="@+id/btnBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Atras" />
+                android:text="Atras"
+                android:textSize="18sp"
+                android:layout_marginTop="320dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/grey"/>
         </LinearLayout>
 
 
