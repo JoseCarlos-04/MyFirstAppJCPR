@@ -7,13 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="26dp"
+            android:text="My First App JCPR"/>
+
+        <Button
+            android:id="@+id/btnWriteMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escribir mensaje"
+            android:textSize="16sp"
+            android:layout_margin="60dp"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
